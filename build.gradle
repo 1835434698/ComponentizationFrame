@@ -2,30 +2,17 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven {
             url uri('repo')
         }
-
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.0'
-        classpath 'com.tangzy.plugin:gradleplugin:1.0.1'//uploadArchives里面的名字
+        classpath "com.android.tools.build:gradle:7.0.0"
+        classpath 'com.tangzy.plugin:gradleplugin:1.0.2'//uploadArchives里面的名字
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
-    }
-}
-allprojects {
-    repositories {
-        google()
-        jcenter()
-//        maven { url 'https://jitpack.io' }
-//        maven { url "https://plugins.gradle.org/m2/" }
-        maven {
-            url uri('repo')
-        }
-
     }
 }
 
