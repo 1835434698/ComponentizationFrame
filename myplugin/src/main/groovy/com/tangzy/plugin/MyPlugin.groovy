@@ -12,6 +12,10 @@ public class MyPlugin implements Plugin<Project> {
         log.error "========================";
         System.out.println("========================")
         System.out.println( "完整的MyPlugin，开始修改Class!")
+
+        String bootClass = project.android.bootClasspath
+
+        System.out.println("bootClass = "+bootClass)
         System.out.println("========================")
     }
 }

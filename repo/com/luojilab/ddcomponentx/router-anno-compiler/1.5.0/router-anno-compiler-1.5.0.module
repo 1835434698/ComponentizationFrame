@@ -1,0 +1,97 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.luojilab.ddcomponentx",
+    "module": "router-anno-compiler",
+    "version": "1.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 7,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "router-anno-compiler-1.5.0.jar",
+          "url": "router-anno-compiler-1.5.0.jar",
+          "size": 22135,
+          "sha512": "fd0c79e72677bb2d456d6c91761a0e02c7309c8be393d865d417e7167a177719d77ed93d3d6ac38789ce1e5cd1bec9227ba23878430c8015d2137f19962db29e",
+          "sha256": "33827fa293ec8d90c77461f72db0a135b9d9ace9a3fff5d709807badbf07a8f3",
+          "sha1": "74533e563b834a6d5634989ad4f48e91904d2288",
+          "md5": "b34496cfccfc951aad81465cf78e0da5"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 7,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.auto.service",
+          "module": "auto-service",
+          "version": {
+            "requires": "1.0-rc2"
+          }
+        },
+        {
+          "group": "com.squareup",
+          "module": "javapoet",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3",
+          "version": {
+            "requires": "3.4"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-collections4",
+          "version": {
+            "requires": "4.1"
+          }
+        },
+        {
+          "group": "com.luojilab.ddcomponentx",
+          "module": "router-annotation",
+          "version": {
+            "requires": "1.5.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "router-anno-compiler-1.5.0.jar",
+          "url": "router-anno-compiler-1.5.0.jar",
+          "size": 22135,
+          "sha512": "fd0c79e72677bb2d456d6c91761a0e02c7309c8be393d865d417e7167a177719d77ed93d3d6ac38789ce1e5cd1bec9227ba23878430c8015d2137f19962db29e",
+          "sha256": "33827fa293ec8d90c77461f72db0a135b9d9ace9a3fff5d709807badbf07a8f3",
+          "sha1": "74533e563b834a6d5634989ad4f48e91904d2288",
+          "md5": "b34496cfccfc951aad81465cf78e0da5"
+        }
+      ]
+    }
+  ]
+}

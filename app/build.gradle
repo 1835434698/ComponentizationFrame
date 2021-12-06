@@ -36,4 +36,8 @@ dependencies {
 //    testImplementation 'junit:junit:4.+'
 //    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
 //    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.luojilab.ddcomponentx:router-annotation:1.5.1'
+//    annotationProcessor 'com.luojilab.ddcomponentx:router-anno-compiler:1.5.1'
+
 }

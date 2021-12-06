@@ -12,3 +12,7 @@ dependencyResolutionManagement {
 rootProject.name = "GradlePlugin"
 include ':app'
 include ':myplugin'
+include ':router-annotation'
+include ':router-anno-compiler'
+//include ':bind-annotation'
+//include ':bind-processor'
