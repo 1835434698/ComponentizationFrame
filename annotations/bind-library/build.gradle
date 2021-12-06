@@ -1,0 +1,5 @@
+apply from: rootDir.getAbsolutePath() + "/annotations/bind-library/bind_library_base.gradle"
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+}

@@ -1,0 +1,89 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'maven-publish'
+
+//def cfg = rootProject.ext.android // 工程配置
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        //aar独立混淆文件
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+//    compileOnly project(':structure')
+}
+
+afterEvaluate {
+    publishing {
+        // 配置模块gradle.properties
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = GROUP_ID  //groupId ，自行定义，一般是包名
+                artifactId = ARTIFACT_ID //artifactId ，自行定义
+                version = VERSION //version 版本号
+            }
+        }
+
+        repositories {
+            maven {
+                url = "../../repo"
+            }
+        }
+    }
+}
+
+//afterEvaluate {
+//    publishing {
+//        // 配置模块gradle.properties
+//        publications {
+//            release(MavenPublication) {
+//                from components.release
+//                groupId = GROUP_ID
+//                artifactId = ARTIFACT_ID
+//                version = VERSION
+//            }
+//        }
+//
+//        // 配置全局gradle.properties
+//        repositories {
+//            maven {
+//                allowInsecureProtocol true
+//                url = version.endsWith('SNAPSHOT') ? NEXUS_REPOSITORY_SNAPSHOT_URL : NEXUS_REPOSITORY_RELEASE_URL
+//                credentials {
+//                    username = NEXUS_MAVEN_USERNAME
+//                    password = NEXUS_MAVEN_PASSWORD
+//                }
+//            }
+//        }
+//    }
+//}

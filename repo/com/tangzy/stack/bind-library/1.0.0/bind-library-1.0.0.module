@@ -1,0 +1,58 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tangzy.stack",
+    "module": "bind-library",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "bind-library-1.0.0.aar",
+          "url": "bind-library-1.0.0.aar",
+          "size": 2309,
+          "sha512": "84c816a2336202dc47a46211343755b9cd01e7ad35e438f34f5e0e403432ed15bc8f375602187c900ce1b0a428b3d063b3a67aa791de8be210ffd33edea4f769",
+          "sha256": "70aa2a0cb15c3d7470306f32a867dd2e9b17bdab36e5e7107e33e36c92d3e3a4",
+          "sha1": "0bef18bc378349c73ba27e5cd70daea66fe2f421",
+          "md5": "f18f286a2efece20c8b44978b4306177"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "bind-library-1.0.0.aar",
+          "url": "bind-library-1.0.0.aar",
+          "size": 2309,
+          "sha512": "84c816a2336202dc47a46211343755b9cd01e7ad35e438f34f5e0e403432ed15bc8f375602187c900ce1b0a428b3d063b3a67aa791de8be210ffd33edea4f769",
+          "sha256": "70aa2a0cb15c3d7470306f32a867dd2e9b17bdab36e5e7107e33e36c92d3e3a4",
+          "sha1": "0bef18bc378349c73ba27e5cd70daea66fe2f421",
+          "md5": "f18f286a2efece20c8b44978b4306177"
+        }
+      ]
+    }
+  ]
+}

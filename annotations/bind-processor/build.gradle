@@ -1,0 +1,31 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+dependencies{
+    implementation project(':bind-annotation')
+    implementation 'com.google.auto.service:auto-service:1.0-rc6'
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc6'
+    implementation 'com.tangzy.stack:bind-annotation:1.0.0'
+}
+
+
+
+afterEvaluate {
+    publishing {
+        // 配置模块gradle.properties
+        publications {
+            release(MavenPublication) {
+                from components.java
+                groupId = GROUP_ID  //groupId ，自行定义，一般是包名
+                artifactId = ARTIFACT_ID //artifactId ，自行定义
+                version = VERSION //version 版本号
+            }
+        }
+
+        repositories {
+            maven {
+                url = "../../repo"
+            }
+        }
+    }
+}

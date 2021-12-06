@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.allinteck.stack",
+    "module": "bind-annotation",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "bind-annotation-1.0.0.jar",
+          "url": "bind-annotation-1.0.0.jar",
+          "size": 977,
+          "sha512": "fc9568610b17e50268e31335cabb9758570a519fea2b82f884805e160069e0e6674f55c9a6c61523f0850b135612129435d734b342f22d4124b0f7a1406fa4ee",
+          "sha256": "359c30663c9892873461ffa9758ed3c51fef6b66cda3a6e0e438d1643218b92c",
+          "sha1": "e3d9e956d735a6dc954ba37d14abc68aad2f9ed7",
+          "md5": "4400d7305bb73bf6a83ade465990fb97"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "bind-annotation-1.0.0.jar",
+          "url": "bind-annotation-1.0.0.jar",
+          "size": 977,
+          "sha512": "fc9568610b17e50268e31335cabb9758570a519fea2b82f884805e160069e0e6674f55c9a6c61523f0850b135612129435d734b342f22d4124b0f7a1406fa4ee",
+          "sha256": "359c30663c9892873461ffa9758ed3c51fef6b66cda3a6e0e438d1643218b92c",
+          "sha1": "e3d9e956d735a6dc954ba37d14abc68aad2f9ed7",
+          "md5": "4400d7305bb73bf6a83ade465990fb97"
+        }
+      ]
+    }
+  ]
+}

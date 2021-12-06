@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'com.tangzy.plugin'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -37,9 +39,12 @@ dependencies {
 //    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
 //    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    implementation 'com.luojilab.ddcomponentx:router-annotation:1.5.1'
-    annotationProcessor 'com.luojilab.ddcomponentx:router-anno-compiler:1.5.2'
+//    implementation 'com.luojilab.ddcomponentx:router-annotation:1.5.1'
+//    annotationProcessor 'com.luojilab.ddcomponentx:router-anno-compiler:1.5.2'
+////    implementation 'com.luojilab.ddcomponent:componentlib:1.0.0'
+//    implementation project(":componentlib")
 
-//    implementation 'com.luojilab.ddcomponent:componentlib:1.0.0'
-    implementation project(":componentlib")
+    implementation 'com.tangzy.stack:bind-library:1.0.0'
+    implementation 'com.tangzy.stack:bind-annotation:1.0.0'
+    kapt 'com.tangzy.stack:bind-processor:1.0.1'
 }

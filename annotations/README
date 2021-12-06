@@ -1,0 +1,25 @@
+1、注解插装。
+
+2、内容
+a、注解声明 bind-annotation 声明注解
+@Target(ElementType.FIELD)
+@Retention(RetentionPolicy.CLASS)
+public @interface BindView {
+    int value();
+}
+b、编译时获取注解，插装。bind-processor
+BindViewProcessor 获取注解的方法，生成 _ViewBinding.java 类
+可以导入a的包（不导入报红，但是可以正常使用）
+c、引用、初始化lib bind-library（也可以是普通module）
+BindViewTools 通过反射b生成的代码bind，设置参数。
+
+3、使用
+plugins {
+    id 'com.android.application'//也可以是module
+    id 'com.***.plugin'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+    implementation 'com.tangzy.stack:bind-library:1.0.0'
+    implementation 'com.tangzy.stack:bind-annotation:1.0.0'
+    kapt 'com.tangzy.stack:bind-processor:1.0.1'

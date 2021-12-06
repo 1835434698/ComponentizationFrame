@@ -13,8 +13,12 @@ dependencyResolutionManagement {
 rootProject.name = "GradlePlugin"
 include ':app'
 include ':myplugin'
-include ':router-annotation'
-include ':router-anno-compiler'
-include ':componentlib'
-//include ':bind-annotation'
-//include ':bind-processor'
+//include ':router-annotation'
+//include ':router-anno-compiler'
+//include ':componentlib'
+include ':bind-annotation'
+include ':bind-processor'
+include ':bind-library'
+project(':bind-annotation').projectDir = new File('annotations/bind-annotation')
+project(':bind-processor').projectDir = new File('annotations/bind-processor')
+project(':bind-library').projectDir = new File('annotations/bind-library')

@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+dependencies{
+
+}
+
+
+afterEvaluate {
+    publishing {
+        // 配置模块gradle.properties
+        publications {
+            release(MavenPublication) {
+                from components.java
+                groupId = GROUP_ID  //groupId ，自行定义，一般是包名
+                artifactId = ARTIFACT_ID //artifactId ，自行定义
+                version = VERSION //version 版本号
+            }
+        }
+
+        repositories {
+            maven {
+                url = "../../repo"
+            }
+        }
+    }
+}
