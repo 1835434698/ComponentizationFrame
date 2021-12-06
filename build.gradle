@@ -12,7 +12,7 @@ buildscript {
         classpath "com.android.tools.build:gradle:7.0.0"
         classpath 'com.tangzy.plugin:gradleplugin:1.0.2'//uploadArchives里面的名字
 
-//        classpath 'com.luojilab.ddcomponentx:router-anno-compiler:1.5.0'
+        classpath 'com.luojilab.ddcomponentx:router-anno-compiler:1.5.2'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

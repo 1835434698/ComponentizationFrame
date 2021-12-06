@@ -94,6 +94,7 @@ public class AutowiredProcessor extends AbstractProcessor {
 
     @Override
     public boolean process(Set<? extends TypeElement> set, RoundEnvironment roundEnvironment) {
+        System.out.println( "完整的1-----");
         if (CollectionUtils.isNotEmpty(set)) {
             try {
                 logger.info(">>> Found autowired field, start... <<<");
