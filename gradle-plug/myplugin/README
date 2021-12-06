@@ -1,0 +1,17 @@
+1、注解插装。Javassist
+
+2、内容
+a、 ⁨src⁩/main/resources⁩/META-INF⁩/gradle-plugins/com.tangzy.plugin.properties
+必须 .properties 结尾，前缀就是要引用的插件名字
+implementation-class=com.tangzy.plugin.MyPlugin 后面是执行类
+b、 MyPlugin可以插入代码。
+
+3、使用
+a、跟目录的build.gradle
+    dependencies {
+        classpath 'com.tangzy.plugin:gradleplugin:1.0.2'//publishing 里面的名字，也就是找到对应的包
+    }
+
+plugins {
+    id 'com.tangzy.plugin//插件的id。即 a 前缀
+}
