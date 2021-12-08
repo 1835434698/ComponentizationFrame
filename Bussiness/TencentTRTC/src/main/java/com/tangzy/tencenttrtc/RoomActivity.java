@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+import com.tangzy.servicelib.ArouterConst;
 import com.tencent.liteav.TXLiteAVCode;
 import com.tencent.liteav.device.TXDeviceManager;
 import com.tencent.rtmp.ui.TXCloudVideoView;
@@ -25,6 +27,7 @@ import java.util.List;
  * @date 2021/10/11 13:13
  * @discription
  */
+@Route(path = ArouterConst.MYSELF_SETTING_ACTIVITY)
 public class RoomActivity  extends AppCompatActivity {
 
     public static final int BANNER = 1003;

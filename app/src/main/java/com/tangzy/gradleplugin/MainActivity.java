@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.tangzy.bindannotation.BindView;
 import com.tangzy.bindlibrary.BindViewTools;
 import com.tangzy.gradleplugin.R;
-import com.tangzy.tencenttrtc.RoomActivity;
+import com.tangzy.servicelib.ArouterConst;
 
 //@RouteNode(path = "/main", desc = "首页")
 public class MainActivity extends AppCompatActivity {
@@ -40,8 +40,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //                Router router = Router.getInstance();
+                ArouterConst.goRoomActivity(MainActivity.this);
 //                UIRouter.getInstance().openUri(MainActivity.this, "DDComp://share/login", null);
-                startActivity(new Intent(MainActivity.this, RoomActivity.class));
+//                startActivity(new Intent(MainActivity.this, RoomActivity.class));
             }
         });
     }

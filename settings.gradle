@@ -36,4 +36,6 @@ project(':plugjar').projectDir = new File('gradle-plug/plugjar')
 
 
 include ':TencentTRTC'
-project(':TencentTRTC').projectDir = new File('BaseLib/TencentTRTC')
+project(':TencentTRTC').projectDir = new File('Bussiness/TencentTRTC')
+include ':ServiceLib'
+project(':ServiceLib').projectDir = new File('BaseLib/ServiceLib')

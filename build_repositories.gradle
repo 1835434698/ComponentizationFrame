@@ -63,6 +63,15 @@ ext {
             "liteav"            : "com.tencent.liteav:LiteAVSDK_Professional:9.0.10437"
 //                                'com.tencent.liteav:LiteAVSDK_TRTC:latest.release'
         ],
+        //阿里
+        'alibaba' : [
+                'router'  : [
+                        'runtime'     : 'com.alibaba:arouter-api:1.5.0',
+                        'compiler'    : 'com.alibaba:arouter-compiler:1.2.2',
+                        'gradlePlugin': 'com.alibaba:arouter-register:1.0.2'
+                ],
+                'fastjson': 'com.alibaba:fastjson:1.1.70.android'
+        ],
 
         //系统
         'androidx' : [
@@ -175,15 +184,6 @@ ext {
 //        ],
 //
 //
-//        //阿里
-//        'alibaba' : [
-//            'router'  : [
-//                'runtime'     : 'com.alibaba:arouter-api:1.5.0',
-//                'compiler'    : 'com.alibaba:arouter-compiler:1.2.2',
-//                'gradlePlugin': 'com.alibaba:arouter-register:1.0.2'
-//            ],
-//            'fastjson': 'com.alibaba:fastjson:1.1.70.android'
-//        ],
 //
 //        //Greenrobot
 //        'greenrobot' : [
