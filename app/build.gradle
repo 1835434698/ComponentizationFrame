@@ -41,7 +41,7 @@ dependencies {
 
     implementation deps.tzy.bindLibrary
     implementation deps.tzy.bindAnnotation
-    implementation deps.tzy.bindProcessor
+    kapt deps.tzy.bindProcessor
     implementation deps.tzy.plugjar
 
 //    implementation project(":componentlib")

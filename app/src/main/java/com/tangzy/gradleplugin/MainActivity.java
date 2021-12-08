@@ -8,9 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-//import com.luojilab.component.componentlib.router.Router;
-//import com.luojilab.component.componentlib.router.ui.UIRouter;
-//import com.luojilab.router.facade.annotation.RouteNode;
 import com.tangzy.bindannotation.BindView;
 import com.tangzy.bindlibrary.BindViewTools;
 import com.tangzy.gradleplugin.R;
