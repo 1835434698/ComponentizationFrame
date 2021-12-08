@@ -6,6 +6,12 @@ plugins {
 dependencies {
     implementation gradleApi() //gradle sdk
     implementation localGroovy() //groovy sdk
+    implementation 'org.javassist:javassist:3.20.0-GA'
+    implementation 'com.android.tools.build:gradle:4.0.1'
+//    implementation 'com.android.tools.build:gradle:3.1.2'
+    implementation 'com.android.tools.build:transform-api:1.5.0'
+//    implementation "com.android.tools.build:gradle:7.0.0"
+//    implementation 'com.android.tools.build:transform-api:2.0.0'
 }
 //repositories {
 ////    jcenter()
@@ -20,7 +26,7 @@ afterEvaluate {
                 from components.java
                 groupId = 'com.tangzy.plugin'  //groupId ，自行定义，一般是包名
                 artifactId = 'gradleplugin' //artifactId ，自行定义
-                version = '1.0.2' //version 版本号
+                version = '1.0.1' //version 版本号
             }
         }
 

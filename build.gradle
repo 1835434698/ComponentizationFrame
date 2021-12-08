@@ -7,12 +7,18 @@ buildscript {
             url uri('repo')
         }
         maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.aliyun.com/repository/central" }
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://maven.aliyun.com/repository/google" }
     }
+    apply from: "build_repositories.gradle"
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.0"
-        classpath 'com.tangzy.plugin:gradleplugin:1.0.2'//uploadArchives里面的名字
+        classpath 'com.tangzy.plugin:gradleplugin:1.0.1'//uploadArchives里面的名字
 
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.71"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${deps_versions.kotlinVersion}"
 //
 //        classpath 'com.luojilab.ddcomponentx:router-anno-compiler:1.5.2'
         // NOTE: Do not place your application dependencies here; they belong

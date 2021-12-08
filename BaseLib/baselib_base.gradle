@@ -1,0 +1,69 @@
+//
+//plugins {  // DDComponentForAndroid构建, 不需要在引用com.android.application或者com.android.library
+//    id 'com.tangzy.plugin'
+////    id 'kotlin-android'
+////    id 'kotlin-kapt'
+//}
+//
+//def cfg = rootProject.ext.android // 工程配置
+//
+//android {
+//    compileSdkVersion cfg.compileSdkVersion
+//
+//    defaultConfig {
+//        minSdkVersion cfg.minSdkVersion
+//        targetSdkVersion cfg.targetSdkVersion
+//        versionCode cfg.versionCode
+//        versionName cfg.versionName
+//
+//        //aar独立混淆文件
+//        consumerProguardFiles "consumer-rules.pro"
+//    }
+//
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//        }
+//    }
+//
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+//    }
+//
+//    kotlinOptions {
+//        jvmTarget = '1.8'
+//    }
+//}
+//
+//// 基础库对全业务模块支持
+//dependencies {
+//    api project(':services')
+//    api project(':customui')
+//    api project(':interfaces')
+//    api project(':structure')
+//}
+//
+//// 组件化ddcomponent支持
+//dependencies {
+//    api 'com.luojilab.ddcomponentx:componentlib:1.5.0', {       // DDComponentForAndroid构建
+//        exclude group: 'com.android.support'
+//        exclude group: 'org.jetbrains.kotlin'
+//    }
+//}
+//
+//// 路由ARouter支持
+//apply plugin: 'kotlin-kapt'                                     // ARouter配置
+//apply plugin: 'com.alibaba.arouter'                             // ARouter配置
+//
+//kapt {                                                          // ARouter配置
+//    arguments {
+//        arg("AROUTER_MODULE_NAME", project.getName())
+//    }
+//}
+//
+//dependencies {
+//    implementation 'com.alibaba:arouter-api:1.5.2'              // ARouter配置
+//    kapt 'com.alibaba:arouter-compiler:1.5.2'                   // ARouter配置
+//}

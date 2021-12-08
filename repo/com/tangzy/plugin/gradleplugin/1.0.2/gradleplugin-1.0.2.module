@@ -27,11 +27,11 @@
         {
           "name": "gradleplugin-1.0.2.jar",
           "url": "gradleplugin-1.0.2.jar",
-          "size": 2683,
-          "sha512": "c083ca025584644d472c9d04426620e9df5a8adea5063e01ba1dcd12c15bacc47629f02bd7928e658f84269d194352c9fb9793922ce78df216202e1b9e909ee2",
-          "sha256": "93e4193b5f91387a49778f6b62afcab8de3b2322c547bd633147f41edda69086",
-          "sha1": "a0c7826c978f583b4a248474679ffdebbb000eff",
-          "md5": "4716914e4b9c61990f1ea07b3ecf3372"
+          "size": 42154,
+          "sha512": "e404cf45261171fa12c1485829a2af5a59732fe238b5ba0798ff7c62324b0344044f4cbd748c8517a72c466618b640a57769b3637187b6ecd4d90cd8cbad8135",
+          "sha256": "4a4565d6eff76f03573dab97b5b3568b9ca5ef65bb9175e0c2158a06fcd7f4fc",
+          "sha1": "50415e9d20a6c582e723bd84dccec2ee872116a0",
+          "md5": "e4a5276234d573a0cdc6e776f7c30423"
         }
       ]
     },
@@ -44,15 +44,38 @@
         "org.gradle.libraryelements": "jar",
         "org.gradle.usage": "java-runtime"
       },
+      "dependencies": [
+        {
+          "group": "org.javassist",
+          "module": "javassist",
+          "version": {
+            "requires": "3.20.0-GA"
+          }
+        },
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "4.0.1"
+          }
+        },
+        {
+          "group": "com.android.tools.build",
+          "module": "transform-api",
+          "version": {
+            "requires": "1.5.0"
+          }
+        }
+      ],
       "files": [
         {
           "name": "gradleplugin-1.0.2.jar",
           "url": "gradleplugin-1.0.2.jar",
-          "size": 2683,
-          "sha512": "c083ca025584644d472c9d04426620e9df5a8adea5063e01ba1dcd12c15bacc47629f02bd7928e658f84269d194352c9fb9793922ce78df216202e1b9e909ee2",
-          "sha256": "93e4193b5f91387a49778f6b62afcab8de3b2322c547bd633147f41edda69086",
-          "sha1": "a0c7826c978f583b4a248474679ffdebbb000eff",
-          "md5": "4716914e4b9c61990f1ea07b3ecf3372"
+          "size": 42154,
+          "sha512": "e404cf45261171fa12c1485829a2af5a59732fe238b5ba0798ff7c62324b0344044f4cbd748c8517a72c466618b640a57769b3637187b6ecd4d90cd8cbad8135",
+          "sha256": "4a4565d6eff76f03573dab97b5b3568b9ca5ef65bb9175e0c2158a06fcd7f4fc",
+          "sha1": "50415e9d20a6c582e723bd84dccec2ee872116a0",
+          "md5": "e4a5276234d573a0cdc6e776f7c30423"
         }
       ]
     }

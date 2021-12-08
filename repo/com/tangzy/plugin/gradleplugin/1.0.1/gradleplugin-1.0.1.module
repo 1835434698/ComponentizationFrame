@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tangzy.plugin",
+    "module": "gradleplugin",
+    "version": "1.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "gradleplugin-1.0.1.jar",
+          "url": "gradleplugin-1.0.1.jar",
+          "size": 42131,
+          "sha512": "cabd465223a06f7dc66264d4d7d707e87214549a1b7aaeee9ac96077bb63798fd8e5831093d11985e0076a3e019fbbe16301e9460684ae36644ca8ebe0541b4a",
+          "sha256": "8f53f152b9f3b884b0ec3a889d947c92345b61b3428ad99ecad0e8957aad5045",
+          "sha1": "2337627e3f7a968fd7d3049564a1dbbcebab177b",
+          "md5": "8b8344bd1b5a6e0a409703105d2ed6c5"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.javassist",
+          "module": "javassist",
+          "version": {
+            "requires": "3.20.0-GA"
+          }
+        },
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "4.0.1"
+          }
+        },
+        {
+          "group": "com.android.tools.build",
+          "module": "transform-api",
+          "version": {
+            "requires": "1.5.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gradleplugin-1.0.1.jar",
+          "url": "gradleplugin-1.0.1.jar",
+          "size": 42131,
+          "sha512": "cabd465223a06f7dc66264d4d7d707e87214549a1b7aaeee9ac96077bb63798fd8e5831093d11985e0076a3e019fbbe16301e9460684ae36644ca8ebe0541b4a",
+          "sha256": "8f53f152b9f3b884b0ec3a889d947c92345b61b3428ad99ecad0e8957aad5045",
+          "sha1": "2337627e3f7a968fd7d3049564a1dbbcebab177b",
+          "md5": "8b8344bd1b5a6e0a409703105d2ed6c5"
+        }
+      ]
+    }
+  ]
+}
