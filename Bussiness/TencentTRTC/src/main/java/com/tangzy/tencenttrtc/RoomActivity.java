@@ -27,7 +27,7 @@ import java.util.List;
  * @date 2021/10/11 13:13
  * @discription
  */
-@Route(path = ArouterConst.MYSELF_SETTING_ACTIVITY)
+@Route(path = ArouterConst.TRTC_SETTING_ACTIVITY)
 public class RoomActivity  extends AppCompatActivity {
 
     public static final int BANNER = 1003;

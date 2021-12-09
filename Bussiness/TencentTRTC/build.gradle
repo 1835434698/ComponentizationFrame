@@ -53,11 +53,11 @@ dependencies {
 
     implementation deps.tzy.bindLibrary
     implementation deps.tzy.bindAnnotation
+    implementation project(':ServiceLib')
     kapt deps.tzy.bindProcessor
     implementation deps.tzy.plugjar
     implementation deps.tencent.liteav
 
     kapt deps.alibaba.router.compiler
 
-    implementation project(path: ':ServiceLib')
 }

@@ -9,6 +9,7 @@
 
     <application>
         <activity android:name=".RoomActivity"/>
+        <activity android:name=".DemoActivity"/>
     </application>
 
 </manifest>

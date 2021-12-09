@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.tangzy.bindannotation.BindView;
 import com.tangzy.bindlibrary.BindViewTools;
-import com.tangzy.gradleplugin.R;
 import com.tangzy.servicelib.ArouterConst;
 
 //@RouteNode(path = "/main", desc = "首页")
+@Route(path = ArouterConst.APP_MAIN_ACTIVITY)
 public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.button)
@@ -33,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 //                Router router = Router.getInstance();
 //                UIRouter.getInstance().openUri(MainActivity.this, "DDComp://share/login", null);
-                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                ArouterConst.goLoginActivity(MainActivity.this);
+//                startActivity(new Intent(MainActivity.this, LoginActivity.class));
             }
         });
         loginBut.setOnClickListener(new View.OnClickListener() {

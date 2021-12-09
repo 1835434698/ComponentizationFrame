@@ -42,6 +42,7 @@ android {
 dependencies {
 
 
+    implementation project(path: ':ServiceLib')
     implementation deps.androidx.appcompat.runtime
 
     implementation deps.android.material
@@ -49,12 +50,12 @@ dependencies {
 
     implementation deps.tzy.bindLibrary
     implementation deps.tzy.bindAnnotation
+    implementation project(':ServiceLib')
     kapt deps.tzy.bindProcessor
     implementation deps.tzy.plugjar
 
     kapt deps.alibaba.router.compiler
 
-    implementation project(path: ':ServiceLib')
 
 }
 
