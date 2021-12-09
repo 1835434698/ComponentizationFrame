@@ -15,7 +15,7 @@ dependencyResolutionManagement {
         maven { url "https://maven.aliyun.com/repository/google" }
     }
 }
-rootProject.name = "GradlePlugin"
+rootProject.name = "ComponentizationFrame"
 include ':app'
 //apt
 include ':bind-annotation'

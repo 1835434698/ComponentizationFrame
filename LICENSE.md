@@ -18,7 +18,7 @@ gradle插件的集成方式有多种，
 
 3、新建com.tangzy.plugin.MyPlugin.groovy 这个就是插件入口。
 
-4、新建com.tangzy.plugin.properties文件在GradlePlugin/myplugin/src/main/resources/META-INF/gradle-plugins目录下
+4、新建com.tangzy.plugin.properties文件在ComponentizationFrame/myplugin/src/main/resources/META-INF/gradle-plugins目录下
 
 5、build.gradle文件使用
 
