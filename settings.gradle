@@ -21,21 +21,24 @@ include ':app'
 include ':bind-annotation'
 include ':bind-processor'
 include ':bind-library'
-project(':bind-annotation').projectDir = new File('annotations/bind-annotation')
-project(':bind-processor').projectDir = new File('annotations/bind-processor')
-project(':bind-library').projectDir = new File('annotations/bind-library')
 
 //gradle
 include ':myplugin'
-project(':myplugin').projectDir = new File('gradle-plug/myplugin')
 include ':plugjar'
-project(':plugjar').projectDir = new File('gradle-plug/plugjar')
 
 //aspectj
 
 
 
+//
 include ':TencentTRTC'
-project(':TencentTRTC').projectDir = new File('Bussiness/TencentTRTC')
 include ':ServiceLib'
+
+
+project(':bind-annotation').projectDir = new File('annotations/bind-annotation')
+project(':bind-processor').projectDir = new File('annotations/bind-processor')
+project(':bind-library').projectDir = new File('annotations/bind-library')
+project(':myplugin').projectDir = new File('gradle-plug/myplugin')
+project(':plugjar').projectDir = new File('gradle-plug/plugjar')
 project(':ServiceLib').projectDir = new File('BaseLib/ServiceLib')
+project(':TencentTRTC').projectDir = new File('Bussiness/TencentTRTC')
